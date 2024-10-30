@@ -63,7 +63,7 @@ export function Header() {
       <div className="flex absolute h-0 w-full justify-end top-[67px]">
         <div
           className={
-            "duration-500 bg-[#881337] flex flex-col text-base items-center font-medium gap-2 h-dvh text-nowrap overflow-x-hidden " +
+            "duration-500 bg-[#881337] flex flex-col text-base items-center font-medium gap-2 h-48 text-nowrap overflow-x-hidden " +
             (showMenu ? "basis-40" : "basis-[0]")
           }
         >
