@@ -25,8 +25,8 @@ export function FeatArtCat() {
           </svg>
         </a>
       </div>
-      <div className="overflow-x-scroll no-scrollbar px-4">
-        <div className="flex gap-6 w-[1312px]">
+      <div className="overflow-x-scroll no-scrollbar">
+        <div className="flex gap-6 w-[1312px] px-4">
           <Category
             textSmall="Pottery"
             textBig="Vases Family"

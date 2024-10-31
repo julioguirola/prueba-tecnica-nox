@@ -23,8 +23,8 @@ export function LatMaster() {
           </svg>
         </a>
       </div>
-      <div className="overflow-x-scroll no-scrollbar h-[300px] px-4">
-        <div className="flex gap-6 w-[1628px] h-[300px]">
+      <div className="overflow-x-scroll no-scrollbar h-[300px]">
+        <div className="flex gap-6 w-[1628px] h-[300px] px-4">
           <MasterPice
             imgUrl="/master1.jpeg"
             hasStatus={true}
