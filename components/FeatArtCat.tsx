@@ -2,7 +2,7 @@ import { Category } from "./cards/Category";
 
 export function FeatArtCat() {
   return (
-    <section className="flex flex-col h-[573px] py-12 gap-8">
+    <section className="flex flex-col py-12 gap-8">
       <div className="flex flex-col gap-2 px-4">
         <h1 className="font-bold text-[32px]/[35.2px]">
           Featured art categories

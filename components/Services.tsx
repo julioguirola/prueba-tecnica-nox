@@ -1,6 +1,6 @@
 export function Services() {
   return (
-    <section className="flex flex-col h-[579px] border-b py-12 px-4 gap-12 justify-center items-center">
+    <section className="flex flex-col border-b py-12 px-4 gap-12 justify-center items-center">
       <h1 className="font-bold text-[32px]/[35.2px] text-center">
         Expanding services
       </h1>

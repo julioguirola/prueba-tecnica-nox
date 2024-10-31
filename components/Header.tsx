@@ -11,7 +11,7 @@ export function Header() {
   };
 
   return (
-    <header className="bg-[#881337] text-white h-[611px] flex flex-col gap-8 border-b">
+    <header className="bg-[#881337] text-white flex flex-col gap-8 border-b">
       <div className="flex justify-between items-center p-4 h-[67px]">
         <h1 className="text-[32px]/[35.2px] font-bold">xinder</h1>
         <button onClick={toggleMenu}>
