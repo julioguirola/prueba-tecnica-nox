@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   title: "xinder",
   description: "Search the work of the best artists",
   openGraph: {
+    title: "xinder",
+    description: "Search the work of the best artists",
     images: [{ url: "/og.png" }],
   },
 };

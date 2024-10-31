@@ -18,7 +18,7 @@ export function MasterPice({
   autor: string;
 }) {
   return (
-    <div className="rounded-[10px] border border-[#E2E8F0] shadow w-[300px] overflow-hidden">
+    <div className="rounded-[10px] border border-[#E2E8F0] shadow w-[300px] h-[300px] overflow-hidden">
       <Image
         src={imgUrl}
         alt="Master Pice Img"
