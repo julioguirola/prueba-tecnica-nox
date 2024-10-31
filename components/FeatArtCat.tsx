@@ -1,9 +1,9 @@
-import { Category } from "./Category";
+import { Category } from "./cards/Category";
 
 export function FeatArtCat() {
   return (
-    <section className="flex flex-col h-[573px] px-4 py-12 gap-8">
-      <div className="flex flex-col gap-2">
+    <section className="flex flex-col h-[573px] py-12 gap-8">
+      <div className="flex flex-col gap-2 px-4">
         <h1 className="font-bold text-[32px]/[35.2px]">
           Featured art categories
         </h1>
@@ -25,8 +25,8 @@ export function FeatArtCat() {
           </svg>
         </a>
       </div>
-      <div className="overflow-x-scroll no-scrollbar">
-        <div className="flex gap-6 w-[1280px]">
+      <div className="overflow-x-scroll no-scrollbar px-4">
+        <div className="flex gap-6 w-[1312px]">
           <Category
             textSmall="Pottery"
             textBig="Vases Family"
@@ -57,6 +57,3 @@ export function FeatArtCat() {
     </section>
   );
 }
-
-//https://www.figma.com/design/X05eeTWZ730izUmH5HC6kq/Landing-Page-Kit---Free-13-Landing-Pages-Collection-for-UI-UX-Design-(Community)?node-id=361-33792&node-type=frame&t=1ih5onDohh1NrauG-0
-//https://www.figma.com/design/X05eeTWZ730izUmH5HC6kq/Landing-Page-Kit---Free-13-Landing-Pages-Collection-for-UI-UX-Design-(Community)?t=bBkS6pRzJ1i8xk6r-0
