@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Solutions() {
   return (
     <section className="flex flex-col gap-8 px-4 py-12 border-b bg-[#475569]">
-      <div className="h-[277px]">
+      <div>
         <Image
           src={"/master4.jpeg"}
           alt="Imagen Arte"
@@ -39,7 +39,7 @@ export function Solutions() {
               height={160}
               className="relative"
             />
-            <div className="flex justify-center items-center relative h-[128px] w-[128px] bg-[#12161980] rounded-[100px] top-[-193.5px] left-[94px] py-4 pl-5 pr-3">
+            <div className="flex justify-center items-center relative h-[128px] w-[128px] bg-[#12161980] rounded-[100px] top-[-144px] left-[94px] py-4 pl-5 pr-3">
               <svg
                 width="64"
                 height="72"
