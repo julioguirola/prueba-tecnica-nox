@@ -35,8 +35,8 @@ export function Solutions() {
             <Image
               src={"/gradient.jpeg"}
               alt="Gradient"
-              width={314}
-              height={160}
+              width={316}
+              height={162}
               className="relative"
             />
             <div className="flex justify-center items-center relative h-[128px] w-[128px] bg-[#12161980] rounded-[100px] top-[-144px] left-[94px] py-4 pl-5 pr-3">
