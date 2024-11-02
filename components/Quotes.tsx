@@ -12,21 +12,13 @@ export default function Quotes() {
     <section className="bg-[#F1F5F9] border-b py-12">
       <Carousel>
         <CarouselContent>
-          <CarouselItem>
-            <Quote />
-          </CarouselItem>
-          <CarouselItem>
-            <Quote />
-          </CarouselItem>
-          <CarouselItem>
-            <Quote />
-          </CarouselItem>
-          <CarouselItem>
-            <Quote />
-          </CarouselItem>
-          <CarouselItem>
-            <Quote />
-          </CarouselItem>
+          {[0, 1, 2, 3, 4].map((x: number) => {
+            return (
+              <CarouselItem key={x}>
+                <Quote index={x} />
+              </CarouselItem>
+            );
+          })}
         </CarouselContent>
         <CarouselPrevious className="relataive left-2" />
         <CarouselNext className="relataive right-2" />

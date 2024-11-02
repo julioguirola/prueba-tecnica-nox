@@ -66,7 +66,7 @@ export default function Solutions() {
             Sollicitudin at velit, blandit tempus nunc in.
           </p>
         </div>
-        <div className="flex flex-col text-[16px]/[22.4px] font-normal">
+        <div className="flex flex-col text-[16px]/[22.4px] font-normal text-nowrap">
           <div className="flex gap-2 items-center h-6">
             <div className="w-6 flex justify-center">
               <svg

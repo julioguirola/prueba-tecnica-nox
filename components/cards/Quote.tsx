@@ -1,6 +1,21 @@
+"use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
-export function Quote() {
+export function Quote({ index }: { index: number }) {
+  const [name, setName] = useState("");
+  const [comment, setComment] = useState("");
+
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/users")
+      .then((res) => res.json())
+      .then((data) => setName(data[index].name));
+
+    fetch("https://jsonplaceholder.typicode.com/comments")
+      .then((res) => res.json())
+      .then((data) => setComment(data[index].body));
+  }, []);
+
   return (
     <div className="flex flex-col px-4 gap-8">
       <div className="flex flex-col items-center h-[258px]">
@@ -27,15 +42,8 @@ export function Quote() {
         </div>
       </div>
       <div className="flex flex-col h-[140px] gap-4 font-normal">
-        <h4 className="text-[20px]/[26px] text-[#475569]">
-          Marie Poirot, Co-Founder
-          <span className="text-blue-600"> Art-Gal</span>
-        </h4>
-        <p className="text-[#0F172A] text-left">
-          “Id urna, nisl, ut quam. Diam suspendisse fringilla quam arcu mattis
-          est velit in. Nibh in purus sit convallis phasellus ut. Neque
-          suspendisse a habitasse commodo.”
-        </p>
+        <h4 className="text-[20px]/[26px] text-[#475569]">{name}</h4>
+        <p className="text-[#0F172A] text-left">“{comment}”</p>
       </div>
     </div>
   );
