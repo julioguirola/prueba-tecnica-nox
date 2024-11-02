@@ -1,6 +1,6 @@
 import { MasterPice } from "./cards/MasterPice";
 
-export function LatMaster() {
+export default function LatMaster() {
   return (
     <section className="flex flex-col py-12 gap-6 bg-[#F1F5F9]">
       <div className="flex flex-col gap-2 px-4 border-r-[3px] border-[#F1F5F9]">

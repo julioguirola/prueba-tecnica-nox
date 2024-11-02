@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { ChangeEvent, useState } from "react";
 
-export function Header() {
+export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
   const [searchText, setSearchText] = useState("");
 
@@ -141,7 +141,7 @@ export function Header() {
         </div>
       </div>
       <div className="flex mx-4 justify-center items-center">
-        <Image src={"/h-photo.png"} alt="Woman" width={345} height={291} />
+        <Image src={"/h-photo.png"} alt="Woman Img" width={345} height={291} />
       </div>
     </header>
   );

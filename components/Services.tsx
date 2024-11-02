@@ -1,4 +1,4 @@
-export function Services() {
+export default function Services() {
   return (
     <section className="flex flex-col border-b py-12 px-4 gap-12 justify-center items-center">
       <h1 className="font-bold text-[32px]/[35.2px] text-center">

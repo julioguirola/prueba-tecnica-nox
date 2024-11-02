@@ -1,15 +1,13 @@
-import { Category } from "./cards/Category";
+import { Event } from "./cards/Event";
 
-export default function FeatArtCat() {
+export default function ArtEvents() {
   return (
-    <section className="flex flex-col py-12 gap-8">
-      <div className="flex flex-col gap-2 px-4">
-        <h1 className="font-bold text-[32px]/[35.2px]">
-          Featured art categories
-        </h1>
-        <a href="#" className="flex justify-between py-3 gap-8 w-[189px]">
+    <section className="flex flex-col gap-6 py-12 px-4 border-b">
+      <div className="flex flex-col gap-2 px-4 border-r-[3px] border-white">
+        <h1 className="font-bold text-[32px]/[35.2px]">Art events</h1>
+        <a href="#" className="flex justify-between py-3 gap-8 w-[258px]">
           <p className="font-medium text-base text-blue-600 text-nowrap">
-            View All Categories
+            Explore All Events
           </p>
           <svg
             width={24}
@@ -25,34 +23,31 @@ export default function FeatArtCat() {
           </svg>
         </a>
       </div>
-      <div className="overflow-x-scroll no-scrollbar">
-        <div className="flex gap-6 w-[1312px] px-4">
-          <Category
-            textSmall="Pottery"
-            textBig="Vases Family"
-            imgUrl="/imagen1.jpeg"
-          />
-          <Category
-            textSmall="Oil Painting"
-            textBig="Camel Portrait"
-            imgUrl="/imagen2.png"
-          />
-          <Category
-            textSmall="Abstract Painting"
-            textBig="Euforia"
-            imgUrl="/imagen3.jpeg"
-          />
-          <Category
-            textSmall="Object Design"
-            textBig="Classic Watch"
-            imgUrl="/imagen4.jpeg"
-          />
-          <Category
-            textSmall="Sculpture"
-            textBig="White Angel"
-            imgUrl="/imagen5.jpeg"
-          />
-        </div>
+      <div className="flex flex-col gap-8">
+        <Event
+          status="Featured"
+          title="Wild Horse Event"
+          text="Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."
+          statusColor="text-purple-800"
+          statusBgColor="bg-purple-100"
+          imgUrl="/event1.jpeg"
+        />
+        <Event
+          status="New"
+          title="Great Colors"
+          text="Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."
+          statusColor="text-green-800"
+          statusBgColor="bg-green-100"
+          imgUrl="/event2.jpeg"
+        />
+        <Event
+          status="Coming Soon"
+          title="Happy Father’s Day"
+          text="Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."
+          statusColor="text-yellow-800"
+          statusBgColor="bg-yellow-100"
+          imgUrl="/event3.jpeg"
+        />
       </div>
     </section>
   );

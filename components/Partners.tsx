@@ -1,4 +1,4 @@
-export function Partners() {
+export default function Partners() {
   return (
     <section className="flex flex-col gap-6 px-4 py-12 justify-center items-center font-bold text-[24px]/[26.4px] text-gray-400 bg-[#F1F5F9]">
       <div className="flex gap-8 justify-evenly items-center">

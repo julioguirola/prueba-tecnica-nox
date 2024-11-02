@@ -21,7 +21,7 @@ export function MasterPice({
     <div className="rounded-[10px] border border-[#E2E8F0] shadow w-[300px] h-[300px] overflow-hidden">
       <Image
         src={imgUrl}
-        alt="Master Pice Img"
+        alt="MasterPice Img"
         width={300}
         height={220}
         className="-z-10"
