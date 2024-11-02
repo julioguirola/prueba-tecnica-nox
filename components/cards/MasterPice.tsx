@@ -40,7 +40,7 @@ export function MasterPice({
         )}
       </div>
 
-      <div className="relative top-[-64px] flex justify-center items-center w-[300px] h-[80px] p-4">
+      <div className="relative top-[-64px] flex justify-center items-center w-[300px] h-[80px] p-4 bg-[#F1F5F9]">
         <div className="flex gap-2">
           <Image
             src={avatarUrl}
