@@ -2,11 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root {
+    scroll-behavior: smooth;
 }
-
+/*
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -31,7 +30,7 @@ body {
 }
 
 @layer base {
-  :root {
+    :root {
         --radius: 0.5rem;
     }
 }
