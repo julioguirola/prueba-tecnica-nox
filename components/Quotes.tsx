@@ -12,7 +12,7 @@ export default function Quotes({ width }: { width: number }) {
     <section id="articles" className="bg-[#F1F5F9] border-b py-12 lg:py-20">
       <Carousel>
         <CarouselContent>
-          {[0, 1, 2, 3, 4].map((x: number) => {
+          {[0, 1, 2, 3, 4, 5].map((x: number) => {
             return (
               <CarouselItem key={x}>
                 <Quote index={x} width={width} />
