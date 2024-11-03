@@ -2,8 +2,8 @@ import { ShellIcon } from "./cards/ShellsIcon";
 
 export default function Partners() {
   return (
-    <section className="flex flex-col gap-6 px-4 py-12 justify-center items-center font-bold text-[24px]/[26.4px] text-gray-400 bg-[#F1F5F9]">
-      <div className="flex gap-8 justify-evenly items-center">
+    <section className="flex flex-col lg:py-12 lg:px-20 lg:flex-row lg:gap-20 gap-6 px-4 py-12 justify-center items-center font-bold text-[24px]/[26.4px] text-gray-400 bg-[#F1F5F9]">
+      <div className="flex gap-8 justify-evenly items-center lg:gap-20">
         <div className="flex gap-2 items-center">
           <svg
             width="35"
@@ -45,7 +45,7 @@ export default function Partners() {
           <h2>Zoomerr</h2>
         </div>
       </div>
-      <div className="flex gap-8 justify-between">
+      <div className="flex gap-8 justify-between lg:gap-20">
         <div className="flex gap-2 items-center">
           <ShellIcon />
           <h2>SHELLS</h2>
@@ -67,7 +67,7 @@ export default function Partners() {
           <h2>WAVES</h2>
         </div>
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-8 lg:gap-20">
         <div className="flex gap-2 items-center">
           <svg
             width="57"

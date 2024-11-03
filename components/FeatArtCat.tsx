@@ -2,9 +2,9 @@ import { Category } from "./cards/Category";
 
 export default function FeatArtCat() {
   return (
-    <section className="flex flex-col py-12 gap-8">
-      <div className="flex flex-col gap-2 px-4">
-        <h1 className="font-bold text-[32px]/[35.2px]">
+    <section id="explore" className="flex flex-col lg:p-20 py-12 gap-8">
+      <div className="flex flex-col gap-2 px-4 lg:flex-row lg:justify-between">
+        <h1 className="font-bold text-[32px]/[35.2px] lg:text-[40px]/[44px]">
           Featured art categories
         </h1>
         <a href="#" className="flex justify-between py-3 gap-8 w-[189px]">
@@ -25,7 +25,7 @@ export default function FeatArtCat() {
           </svg>
         </a>
       </div>
-      <div className="overflow-x-scroll no-scrollbar">
+      <div className="overflow-x-scroll no-scrollbar flex">
         <div className="flex gap-6 w-[1312px] px-4">
           <Category
             textSmall="Pottery"

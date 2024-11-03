@@ -9,11 +9,13 @@ import { MasterPice } from "./cards/MasterPice";
 
 export default function Incredible() {
   return (
-    <section className="flex flex-col bg-[#475569] border-b gap-8 py-12 px-4">
-      <div className="flex flex-col gap-6 text-white">
+    <section className="flex flex-col bg-[#475569] border-b gap-8 py-12 px-4 lg:p-20 lg:flex-row lg:gap-20 lg:items-center">
+      <div className="flex flex-col gap-6 text-white lg:w-[400px]">
         <div className="flex flex-col gap-6">
-          <h1 className="font-bold text-[32px]/[35.2px]">Be incredible</h1>
-          <p className="font-normal text-[16px]/[22.4px]">
+          <h1 className="font-bold text-[32px]/[35.2px] lg:text-[56px]/[61.6px] lg:font-extrabold">
+            Be incredible
+          </h1>
+          <p className="font-normal text-[16px]/[22.4px] lg:text-[18px]/[28.8px]">
             Nec ultricies eget placerat ultricies eleifend dignissim aliquet
             sapien. Senectus vestibulum, eget erat at et congue cursus pretium.
           </p>
@@ -22,7 +24,7 @@ export default function Incredible() {
           Explore Xinder
         </button>
       </div>
-      <div>
+      <div className="lg:w-[800px]">
         <Carousel>
           <CarouselContent>
             <CarouselItem className="flex justify-center">

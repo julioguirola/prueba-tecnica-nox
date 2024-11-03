@@ -2,9 +2,11 @@ import { MasterPice } from "./cards/MasterPice";
 
 export default function LatMaster() {
   return (
-    <section className="flex flex-col py-12 gap-6 bg-[#F1F5F9]">
-      <div className="flex flex-col gap-2 px-4 border-r-[3px] border-[#F1F5F9]">
-        <h1 className="font-bold text-[32px]/[35.2px]">Latest masterpieces</h1>
+    <section className="flex flex-col py-12 lg:p-20 gap-6 bg-[#F1F5F9]">
+      <div className="flex flex-col gap-2 px-4 border-r-[3px] border-[#F1F5F9] lg:flex-row lg:justify-between">
+        <h1 className="font-bold text-[32px]/[35.2px] lg:text-[40px]/[44px]">
+          Latest masterpieces
+        </h1>
         <a href="#" className="flex justify-between py-3 gap-8 w-[258px]">
           <p className="font-medium text-base text-blue-600 text-nowrap">
             Discover More Masterpieces

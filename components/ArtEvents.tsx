@@ -2,9 +2,11 @@ import { Event } from "./cards/Event";
 
 export default function ArtEvents() {
   return (
-    <section className="flex flex-col gap-6 py-12 px-4 border-b">
-      <div className="flex flex-col gap-2 px-4 border-r-[3px] border-white">
-        <h1 className="font-bold text-[32px]/[35.2px]">Art events</h1>
+    <section className="flex flex-col gap-6 py-12 px-4 border-b lg:p-20">
+      <div className="flex flex-col gap-2 px-4 border-r-[3px] border-white lg:flex-row lg:justify-between">
+        <h1 className="font-bold text-[32px]/[35.2px] lg:text-[40px]/[44px]">
+          Art events
+        </h1>
         <a href="#" className="flex justify-between py-3 gap-8 w-[258px]">
           <p className="font-medium text-base text-blue-600 text-nowrap">
             Explore All Events
@@ -23,7 +25,7 @@ export default function ArtEvents() {
           </svg>
         </a>
       </div>
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 lg:gap-6 lg:flex-row">
         <Event
           status="Featured"
           title="Wild Horse Event"

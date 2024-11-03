@@ -1,5 +1,5 @@
 "use client";
-import { lazy } from "react";
+import { lazy, useEffect, useState } from "react";
 const Header = lazy(() => import("@/components/Header"));
 const Partners = lazy(() => import("@/components/Partners"));
 const FeatArtCat = lazy(() => import("@/components/FeatArtCat"));
@@ -13,19 +13,34 @@ const AddMore = lazy(() => import("@/components/AddMore"));
 const Footer = lazy(() => import("@/components/Footer"));
 
 export default function Home() {
+  const [width, setWidth] = useState(1024);
+
+  useEffect(() => {
+    const refreshWidth = () => {
+      setWidth(window.innerWidth);
+    };
+
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+      window.addEventListener("resize", refreshWidth);
+    }
+
+    return () => window.removeEventListener("reset", refreshWidth);
+  });
+
   return (
     <>
-      <Header />
+      <Header width={width} />
       <main>
         <Partners />
         <FeatArtCat />
         <LatMaster />
         <Services />
-        <Solutions />
-        <Quotes />
+        <Solutions width={width} />
+        <Quotes width={width} />
         <Incredible />
         <ArtEvents />
-        <AddMore />
+        <AddMore width={width} />
       </main>
       <Footer />
     </>

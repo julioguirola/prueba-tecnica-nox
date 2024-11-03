@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
-    <footer className="px-4 text-[#475569]">
-      <div className="flex flex-col py-12 gap-8 border-b border-[#E2E8F0]">
-        <div className="flex flex-col item">
+    <footer className="px-4 text-[#475569] lg:px-20">
+      <div className="flex flex-col py-12 lg:gap-12 lg:flex-row gap-8 border-b border-[#E2E8F0]">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col item">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -77,7 +77,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col item">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -115,7 +115,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -153,7 +153,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -191,7 +191,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col lg:w-[173px]">
           <div className="flex gap-2 py-3 font-medium text-[16px]/[17.6px] items-center">
             <svg
               width="24"
@@ -230,7 +230,7 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col py-6 gap-6">
+      <div className="flex flex-col py-6 gap-6 lg:pt-12 lg:justify-between lg:flex-row">
         <p className="text-[16px]/[24.2px] font-normal">
           @ 2023 Xinder, Inc. All rights reserved.
         </p>
@@ -315,7 +315,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="pb-12 text-[12px]/[16.8px] text-left">
+      <div className="pb-12 lg:pt-6 text-[12px]/[16.8px] text-left">
         In sed posuere sed ullamcorper feugiat. Lacinia elit neque, ipsum, non.
         Tellus mattis enim volutpat habitasse. Semper posuere lectus consectetur
         aliquam et ullamcorper. Dictumst aenean justo fames diam eget volutpat

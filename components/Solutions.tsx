@@ -1,45 +1,92 @@
 import Image from "next/image";
 
-export default function Solutions() {
+export default function Solutions({ width }: { width: number }) {
   return (
-    <section className="flex flex-col gap-8 px-4 py-12 border-b bg-[#475569]">
-      <div className="h-[277px]">
-        <Image
-          src={"/master4.jpeg"}
-          alt="Imagen Arte"
-          width={200}
-          height={147}
-          className="rounded-[10px] shadow"
-        />
-        <Image
-          src={"/avatar5_2.jpeg"}
-          alt="Imagen Arte"
-          width={86}
-          height={63}
-          className="relative rounded-[10px] top-[-80px] left-[275px] z-30 shadow"
-        />
-        <Image
-          src={"/avatar4_2.jpeg"}
-          alt="Imagen Arte"
-          width={82}
-          height={60}
-          className="relative rounded-[10px] top-[7px] left-[48px] z-30 shadow"
-        />
-        <div className="relative top-[-224px] left-[23px] rounded-[20px] border border-[#CBD5E1] h-[201px] w-[316px] overflow-hidden z-10 bg-white shadow">
+    <section
+      id="solutions"
+      className="flex flex-col gap-8 px-4 py-12 border-b bg-[#475569] lg:flex-row-reverse lg:p-20 lg:gap-20 justify-center"
+    >
+      <div className="h-[277px] lg:h-[383px] lg:w-[600px]">
+        {width < 1024 && (
+          <Image
+            src={"/master4.jpeg"}
+            alt="Imagen Arte"
+            width={200}
+            height={147}
+            className="rounded-[10px] shadow"
+          />
+        )}
+        {width >= 1024 && (
+          <Image
+            src={"/master4.jpeg"}
+            alt="Imagen Arte"
+            width={300}
+            height={220}
+            className="rounded-[10px] shadow"
+          />
+        )}
+        {width < 1024 && (
+          <Image
+            src={"/avatar5_2.jpeg"}
+            alt="Imagen Arte"
+            width={86}
+            height={63}
+            className="relative rounded-[10px] top-[-80px] left-[275px] z-30 shadow"
+          />
+        )}
+        {width >= 1024 && (
+          <Image
+            src={"/avatar5_2.jpeg"}
+            alt="Imagen Arte"
+            width={178}
+            height={131}
+            className="relative rounded-[10px] top-[-80px] lg:top-[-162px] left-[275px] lg:left-[422px] z-30 shadow"
+          />
+        )}
+        {width < 1024 && (
+          <Image
+            src={"/avatar4_2.jpeg"}
+            alt="Imagen Arte"
+            width={82}
+            height={60}
+            className="relative rounded-[10px] top-[7px] left-[48px] z-30 shadow"
+          />
+        )}
+        {width >= 1024 && (
+          <Image
+            src={"/avatar4_2.jpeg"}
+            alt="Imagen Arte"
+            width={143}
+            height={105}
+            className="relative rounded-[10px] top-[7px] lg:top-[-73px] left-[48px] lg:left-[95px] z-30 shadow"
+          />
+        )}
+        <div className="relative top-[-224px] lg:top-[-424px] left-[23px] lg:left-[39px] rounded-[20px] border border-[#CBD5E1] h-[201px] lg:h-[287px] w-[316px] lg:w-[486px] overflow-hidden z-10 bg-white shadow">
           <div className="flex h-[41px] gap-[5px] py-2 px-4 items-center bg-white">
             <div className="h-[8.33px] w-[8.33px] rounded-full bg-rose-600"></div>
             <div className="h-[8.33px] w-[8.33px] rounded-full bg-amber-400"></div>
             <div className="h-[8.33px] w-[8.33px] rounded-full bg-green-500"></div>
           </div>
           <div>
-            <Image
-              src={"/gradient.jpeg"}
-              alt="Gradient"
-              width={316}
-              height={162}
-              className="relative"
-            />
-            <div className="flex justify-center items-center relative h-[128px] w-[128px] bg-[#12161980] rounded-[100px] top-[-144px] left-[94px] py-4 pl-5 pr-3">
+            {width < 1024 && (
+              <Image
+                src={"/gradient.jpeg"}
+                alt="Gradient"
+                width={316}
+                height={162}
+                className="relative"
+              />
+            )}
+            {width >= 1024 && (
+              <Image
+                src={"/gradient.jpeg"}
+                alt="Gradient"
+                width={486}
+                height={268}
+                className="relative"
+              />
+            )}
+            <div className="flex justify-center items-center relative h-[128px] w-[128px] bg-[#12161980] rounded-[100px] top-[-144px] lg:top-[-187px] left-[94px] lg:left-[177px] py-4 pl-5 pr-3">
               <svg
                 width="64"
                 height="72"
@@ -56,9 +103,9 @@ export default function Solutions() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-6 text-white">
+      <div className="flex flex-col gap-6 text-white lg:w-[600px]">
         <div className="flex flex-col gap-6">
-          <h1 className="font-bold text-[32px]/[35.2px]">
+          <h1 className="font-bold text-[32px]/[35.2px] lg:text-[56px]/[61.6px]">
             Best solutions for your demanding collection
           </h1>
           <p className="font-normal text-[16px]/[22.4px]">
